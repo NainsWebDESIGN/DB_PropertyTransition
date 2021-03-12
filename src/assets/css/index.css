@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微軟正黑體", sans-serif;
+}
+
+section {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+table {
+  border: 1px solid #ccc;
+}
+
+table tr {
+  min-height: 27px;
+}
+
+table tr th {
+  text-align: left;
+}
+
+table tr td {
+  min-width: 270px;
+}
+
+table tr th,
+table tr td {
+  padding: 13px 13px;
+}
+
+table tr:nth-child(even) {
+  background: #f1f1f1;
+}
+.outSidebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.rightTop {
+  position: flex;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  background: #f1f1f1;
+  width: 49px;
+  height: 27px;
+  font-weight: 400;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(
+    to top,
+    rgba(243, 153, 35, 1),
+    rgba(243, 153, 35, 0.3)
+  );
+}

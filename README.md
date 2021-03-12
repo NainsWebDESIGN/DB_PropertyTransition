@@ -1,1 +1,3 @@
-"# DB_PropertyTransition" 
+### DB 屬性原文及中文轉換
+
+改用框架(Angular)做翻譯
