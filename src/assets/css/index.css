@@ -4,11 +4,14 @@
   box-sizing: border-box;
   font-family: "微軟正黑體", sans-serif;
 }
-
+body {
+  width: 100%;
+}
 section {
   width: 70%;
   position: relative;
   left: 15%;
+  padding: 19px 0;
 }
 
 table {
@@ -36,12 +39,11 @@ table tr:nth-child(even) {
   background: #f1f1f1;
 }
 .outSidebtn {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
 }
 .rightTop {
-  position: flex;
   text-align: center;
   height: 50px;
   line-height: 50px;
