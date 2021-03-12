@@ -1,15 +1,15 @@
 <div class="outSidebtn">
   <div class="rightTop">
-    <button (click)="changeLang('en-us')">英文</button>
-    <button (click)="changeLang('zh-tw')">中文</button>
+    <button (click)="changeLang('en-us')">{{"Original" | app: lang.LangObj}}</button>
+    <button (click)="changeLang('zh-tw')">{{"Chinese" | app: lang.LangObj}}</button>
   </div>
 </div>
 <section>
-  <h1>MySQL Data Types (Version 8.0)</h1>
+  <h1>{{"MySQL Data Types (Version 8.0)" | app: lang.LangObj}}</h1>
   <br>
-  <h4>In MySQL there are three main data types: string, numeric, and date and time.</h4>
+  <h4>{{"In MySQL there are three main data types: string, numeric, and date and time." | app: lang.LangObj}}</h4>
   <br>
-  <h2>String Data Types</h2>
+  <h2>{{"String Data Types" | app: lang.LangObj}}</h2>
   <br>
   <table>
     <tr>
@@ -18,68 +18,78 @@
     </tr>
     <tr>
       <td>CHAR(size)</td>
-      <td>A FIXED length string (can contain letters, numbers, and special characters). The size parameter specifies the
-        column length in characters - can be from 0 to 255. Default is 1</td>
+      <td>
+        {{"A FIXED length string (can contain letters, numbers, and special characters). The size parameter specifies"
+        | app: lang.LangObj}}
+        {{"the column length in characters - can be from 0 to 255. Default is 1"
+        | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>VARCHAR(size)</td>
-      <td>A VARIABLE length string (can contain letters, numbers, and special characters). The size parameter specifies
-        the maximum column length in characters - can be from 0 to 65535</td>
+      <td>
+        {{"A VARIABLE length string (can contain letters, numbers, and special characters). The size parameter"
+        | app: lang.LangObj}}
+        {{"specifies the maximum column length in characters - can be from 0 to 65535" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>BINARY(size)</td>
-      <td>Equal to CHAR(), but stores binary byte strings. The size parameter specifies the column length in bytes.
-        Default is 1</td>
+      <td>{{"Equal to CHAR(), but stores binary byte strings. The size parameter specifies the column length in bytes."
+        | app: lang.LangObj}}
+        {{"Default is 1" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>VARBINARY(size)</td>
-      <td>Equal to VARCHAR(), but stores binary byte strings. The size parameter specifies the maximum column length in
-        bytes.</td>
+      <td>
+        {{"Equal to VARCHAR(), but stores binary byte strings." | app: lang.LangObj}}
+        {{"The size parameter specifies the maximum column length in bytes." | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>TINYBLOB</td>
-      <td>For BLOBs (Binary Large OBjects). Max length: 255 bytes</td>
+      <td>{{"For BLOBs (Binary Large OBjects). Max length: 255 bytes" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>TINYTEXT</td>
-      <td>Holds a string with a maximum length of 255 characters</td>
+      <td>{{"Holds a string with a maximum length of 255 characters" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>TEXT(size)</td>
-      <td>Holds a string with a maximum length of 65,535 bytes</td>
+      <td>{{"Holds a string with a maximum length of 65,535 bytes" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>BLOB(size)</td>
-      <td>For BLOBs (Binary Large OBjects). Holds up to 65,535 bytes of data</td>
+      <td>{{"For BLOBs (Binary Large OBjects). Holds up to 65,535 bytes of data" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>MEDIUMTEXT</td>
-      <td>Holds a string with a maximum length of 16,777,215 characters</td>
+      <td>{{"Holds a string with a maximum length of 16,777,215 characters" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>MEDIUMBLOB</td>
-      <td>For BLOBs (Binary Large OBjects). Holds up to 16,777,215 bytes of data</td>
+      <td>{{"For BLOBs (Binary Large OBjects). Holds up to 16,777,215 bytes of data" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>LONGTEXT</td>
-      <td>Holds a string with a maximum length of 4,294,967,295 characters</td>
+      <td>{{"Holds a string with a maximum length of 4,294,967,295 characters" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>LONGBLOB</td>
-      <td>For BLOBs (Binary Large OBjects). Holds up to 4,294,967,295 bytes of data</td>
+      <td>{{"For BLOBs (Binary Large OBjects). Holds up to 4,294,967,295 bytes of data" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>ENUM(val1, val2, val3, ...)</td>
-      <td>A string object that can have only one value, chosen from a list of possible values. You can list up
-        to
-        65535 values in an ENUM list. If a value is inserted that is not in the list, a blank value will be
-        inserted. The values are sorted in the order you enter them</td>
+      <td>
+        {{"A string object that can have only one value," | app: lang.LangObj}}
+        {{"chosen from a list of possible values. You can list up to 65535 values in an ENUM list."
+        | app: lang.LangObj}}
+        {{"If a value is inserted that is not in the list, a blank value will be inserted." | app: lang.LangObj}}
+        {{"The values are sorted in the order you enter them" | app: lang.LangObj}}</td>
     </tr>
     <tr>
       <td>SET(val1, val2, val3, ...)</td>
-      <td>A string object that can have 0 or more values, chosen from a list of possible values. You can list
-        up
-        to 64 values in a SET list</td>
+      <td>
+        {{"A string object that can have 0 or more values," | app: lang.LangObj}}
+        {{"chosen from a list of possible values. You can list up to 64 values in a SET list"
+        | app: lang.LangObj}}</td>
     </tr>
   </table>
   <br><br><br>
